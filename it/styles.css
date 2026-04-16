@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background-color: #9BA7BF;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+p {
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #C1C9D9;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    justify-self: center;
+}
+
+header .container .name .logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+header .container .name img {
+    width: 10%;
+}
+
+header .container .menu button {
+    background: transparent;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: black;
+    padding: 0%;
+    cursor: pointer;
+}
+
+header .container .menu button span {
+    display: block;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: black;
+    transform: translateX(20%);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+header .container .menu button span:nth-of-type(1) {
+    top: -15%;
+}
+
+header .container .menu button span:nth-of-type(2) {
+    top: 0%;
+}
+
+header .container .menu button span:nth-of-type(3) {
+    top: 15%;
+}
+
+header .container .menu button:focus+.list {
+    height: 170px;
+    padding-block: 20px;
+}
+
+header .container .menu .list {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7686A6;
+    margin-block: 10px;
+    width: 90%;
+    height: 0;
+    text-align: center;
+    border-radius: 5px;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+header .container .menu .list li {
+    padding-block: 10px;
+}
+
+#Home .container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#Home .container img {
+    width: 30%;
+}
+
+#Home .container a {
+    font-size: 30px;
+    margin-inline: 20px;
+}
+
+#MyCourses .container {
+    text-align: center;
+}
+
+#MyCourses .container img {
+    width: 10%;
+}
+
+#MyCourses .container table {
+    width: 90%;
+    justify-self: center;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+#MyCourses .container table th {
+    padding-block: 20px;
+}
+
+#MyCourses .container table td {
+    padding-block: 10px;
+}
+
+#MyCourses .container table th {
+    border-bottom: 3px solid black;
+}
+
+#AddCourse .container {
+    text-align: center;
+}
+
+#AddCourse .container img {
+    width: 10%;
+}
+
+#AddCourse .container form,
+#ContactUs .container .contact {
+    text-align: start;
+}
+
+#AddCourse .container .courses,
+#ContactUs .container .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#AddCourse .container .courses label,
+textarea,
+#ContactUs .container .contact label {
+    margin-block: 18px;
+}
+
+#AddCourse .container .courses label,
+#ContactUs .container .contact label {
+    font-size: 20px;
+}
+
+#AddCourse .container .courses input,
+textarea,
+#ContactUs .container .contact input {
+    padding-block: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#AddCourse .container .courses #Credit {
+    width: 10%;
+}
+
+#AddCourse .container form button,
+#ContactUs .container .contact button {
+    display: flex;
+    justify-self: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(212, 5, 122, 0.75);
+    border: 3px solid white;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-inline: 5px;
+    font-family: "Pixelify Sans", sans-serif;
+    transition-duration: .5s;
+}
+
+#AddCourse .container form button:hover,
+#ContactUs .container .contact button:hover {
+    background-color: rgba(212, 5, 122, 0.445);
+}
+
+#ContactUs .container {
+    text-align: center;
+}
+
+#ContactUs .container p {
+    font-size: 20px;
+}
+
+#ContactUs .container img {
+    width: 10%;
+}
+
+#ContactUs .container .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #7686A6;
+    color: #a3e3d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
